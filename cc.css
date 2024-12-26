@@ -11,8 +11,13 @@ h1 {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  background: linear-gradient(135deg, #d4d4db, #a19dcb);
+  background: linear-gradient(135deg, #3b3ed9, #2a282a);
   border-radius: 10px;
   color: #0f0f0f;
   font-size: 20px;
+}
+
+.container:hover {
+  background: linear-gradient(135deg, #5e5ff5, #3b3b3b);
+  transform: scale(1.05);
 }
