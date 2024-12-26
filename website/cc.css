@@ -1,0 +1,18 @@
+body {
+  background-color: #0f0f0f;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  text-align: center;
+
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #d4d4db, #a19dcb);
+  border-radius: 10px;
+  color: #0f0f0f;
+  font-size: 20px;
+}
