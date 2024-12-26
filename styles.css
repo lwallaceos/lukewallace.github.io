@@ -1,0 +1,91 @@
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 1em 4em;
+  transition: all 0.4s;
+  opacity: 0.8;
+  color: rgb(218, 215, 215);
+  font-size: 35px;
+}
+
+body {
+  background-color: #151616;
+  text-align: center;
+  height: 50px;
+  color: #000000;
+}
+
+.projects {
+  background-color: #000000;
+  color: white;
+  border: none;
+  transition: all 0.9s;
+  opacity: 0.8;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.Education {
+  background-color: #000000;
+  color: white;
+  border: none;
+  transition: all 0.9s;
+  opacity: 0.8;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.Experience {
+  background-color: #000000;
+  color: white;
+  border: none;
+  transition: all 0.9s;
+  opacity: 0.8;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.Contact {
+  background-color: #000000;
+  color: white;
+  border: none;
+  transition: all 0.9s;
+  opacity: 0.8;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.styled-image {
+  text-align: left;
+  width: 100px;
+  height: 100px;
+  margin-left: 25px;
+}
+
+.styled-image1 {
+  text-align: center;
+  margin-top: 55px;
+  height: 600px;
+}
+
+button:hover {
+  background-color: rgb(43, 42, 47);
+  transition: background-color 0.3s ease;
+}
