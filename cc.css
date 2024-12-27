@@ -15,6 +15,7 @@ h1 {
   border-radius: 10px;
   color: #0f0f0f;
   font-size: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .container:hover {
