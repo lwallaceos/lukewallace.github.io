@@ -19,6 +19,12 @@ p {
   text-decoration: underline;
 }
 
+p4 {
+  text-decoration: underline;
+}
+p8 {
+  text-decoration: underline;
+}
 h2,
 h3,
 h4 {
@@ -30,10 +36,11 @@ h4 {
   border-radius: 15px;
   padding: 15px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
 }
 
-/* Hover effect */
 h2:hover,
 h3:hover,
 h4:hover {
