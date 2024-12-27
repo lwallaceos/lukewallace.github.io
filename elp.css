@@ -19,12 +19,11 @@ p {
   text-decoration: underline;
 }
 
-/* Button-like styles for h2, h3, and h4 */
 h2,
 h3,
 h4 {
-  background-color: #c3dff4;
-  width: 250px; /* Adjust the width as needed */
+  background: linear-gradient(135deg, #3b3ed9, #2a282a);
+  width: 600px;
   font-size: 20px;
   margin: 25px auto;
   text-align: center;
@@ -38,12 +37,6 @@ h4 {
 h2:hover,
 h3:hover,
 h4:hover {
-  background-color: #9ac5e8; /* Darker shade on hover */
-  transform: scale(1.05); /* Slightly grow the button */
-}
-
-/* Other text decorations */
-p4,
-p8 {
-  text-decoration: underline;
+  background-color: #9ac5e8;
+  transform: scale(1.05);
 }
