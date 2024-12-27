@@ -1,49 +1,49 @@
+/* Basic Styling */
 h1 {
-  margin: 10 px auto;
+  margin: 10px auto;
   color: rgb(218, 215, 215);
 }
 
 head {
   text-align: center;
 }
+
 body {
   background-color: #000000;
   text-align: center;
   align-items: center;
   padding: 20px;
 }
+
 p {
   text-decoration: underline;
 }
 
-h2 {
+/* Button-like styles for h2, h3, and h4 */
+h2,
+h3,
+h4 {
   background-color: #c3dff4;
-  width: 750px;
+  width: 250px; /* Adjust the width as needed */
   font-size: 20px;
   margin: 25px auto;
   text-align: center;
   border-radius: 15px;
-}
-h3 {
-  background-color: #c3dff4;
-  width: 750px;
-  font-size: 20px;
-  margin: 15px auto;
-  border-radius: 15px;
-}
-h4 {
-  background-color: #c3dff4;
-  width: 750px;
-  font-size: 20px;
-  text-align: center;
-  margin: 10px auto;
-  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-p4 {
-  text-decoration: underline;
+/* Hover effect */
+h2:hover,
+h3:hover,
+h4:hover {
+  background-color: #9ac5e8; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly grow the button */
 }
 
+/* Other text decorations */
+p4,
 p8 {
   text-decoration: underline;
 }
