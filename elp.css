@@ -1,16 +1,10 @@
 body {
+  margin-top: 20px;
   background-color: #000000;
   padding: 10px;
   color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: 14px;
-}
-
-h1 {
-  margin: 5px auto;
-  color: rgb(218, 215, 215);
-  text-align: center;
-  font-size: 18px;
 }
 
 h2,
@@ -62,5 +56,5 @@ section {
   width: 700px;
   border-radius: 8px;
   background-color: #1a1a1a;
-  margin: 0 auto;
+  margin-top: 20px;
 }
