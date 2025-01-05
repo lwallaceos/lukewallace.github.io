@@ -14,6 +14,9 @@ const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+// Colors for the stars
+const starColors = ["#FFD700", "#FFFFFF", "#00BFFF", "#FF69B4", "#ADFF2F"];
+
 // Create stars and shooting stars arrays
 const stars = [];
 const shootingStars = [];
@@ -24,7 +27,9 @@ function createStar() {
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     radius: Math.random() * 1.5,
-    opacity: Math.random(),
+    opacity: Math.random() * 0.5 + 0.5, // Less flashy: minimum opacity of 0.5
+    color: starColors[Math.floor(Math.random() * starColors.length)], // Random color
+    opacityDirection: Math.random() > 0.5 ? 1 : -1, // Opacity fade direction
   };
 }
 
@@ -45,7 +50,7 @@ function drawStar(star) {
   ctx.globalAlpha = star.opacity;
   ctx.beginPath();
   ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-  ctx.fillStyle = "white";
+  ctx.fillStyle = star.color; // Use the star's color
   ctx.fill();
 }
 
@@ -66,7 +71,11 @@ function drawShootingStar(star) {
 // Update stars and shooting stars
 function updateStars() {
   stars.forEach((star) => {
-    star.opacity = Math.random();
+    // Subtle opacity variation
+    star.opacity += 0.01 * star.opacityDirection;
+    if (star.opacity > 1 || star.opacity < 0.5) {
+      star.opacityDirection *= -1; // Reverse direction
+    }
   });
 
   shootingStars.forEach((star, index) => {
