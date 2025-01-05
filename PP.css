@@ -17,46 +17,22 @@ h1 {
   text-align: center;
 }
 
-.style2,
-.style3,
-.style4 {
-  padding: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-  display: block;
-  border: none;
-}
-
-.style2 {
-  margin-top: 25px;
-}
-
-.style3 {
-  margin-top: 20px;
-}
-
-.style4 {
-  margin-top: 20px;
-}
-
-button:hover {
-  background-color: rgb(48, 70, 243);
-}
-
 .button-link {
-  background: linear-gradient(135deg, #3b3ed9, #2a282a);
+  background: linear-gradient(135deg, #9d8ee4, #f6a4a4);
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 1rem;
   text-decoration: none;
-  color: rgb(1, 1, 1);
+  color: #ffffff;
   border-radius: 8px;
   margin: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .button-link:hover {
-  background-color: #a7adba;
-  transform: scale(1.05);
+  background: linear-gradient(135deg, #f43f5e, #e11d48);
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(244, 63, 94, 0.5);
 }

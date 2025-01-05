@@ -15,18 +15,16 @@
       <img src="javascript-736400_1280.png" class="styled-image" />
       <img src="sql-database-generic.svg" class="styled-image" />
     </div>
-    <button class="projects" onclick="locationURL('Projects')">Projects</button>
-    <button class="Experience" onclick="locationURL('Experience')">
-      Experience
-    </button>
-    <button class="Education" onclick="locationURL('Education')">
-      Education
-    </button>
-    <button class="Contact" onclick="locationURL('Contact')">About me</button>
-    <script src="SWE.js"></script>
-    <script src="animation.js"></script>
-    <div>
-      <img src="sphere-5630173_960_720.webp" class="styled-image1" />
+
+    <div class="menu">
+      <button onclick="loadContent('PP.html')">Projects</button>
+      <button onclick="loadContent('elp.html')">Experience</button>
+      <button onclick="loadContent('ee.html')">Education</button>
+      <button onclick="loadContent('cc.html')">About Me</button>
     </div>
+
+    <div id="content" class="content"></div>
+    <script src="SWE.js" ;></script>
+    <script src="animation.js"></script>
   </body>
 </html>

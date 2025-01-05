@@ -1,17 +1,17 @@
-function locationURL(page) {
-     if (page === "Projects") {
-         location.href = "PP.html";
-     } else if (page === "Experience") {
-         location.href = "elp.html";
-     } else if (page === "Education") {
-         location.href = "ee.html";
-     } else if (page === "Contact") {
-         location.href = "cc.html";
-     }
+function loadContent(pageUrl) {
+  fetch(pageUrl)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Error loading page: ${response.statusText}`);
+      }
+      return response.text();
+    })
+    .then((html) => {
+      document.getElementById("content").innerHTML = html;
+    })
+    .catch((error) => {
+      console.error(error);
+      document.getElementById("content").innerHTML =
+        "<p>Sorry, content could not be loaded.</p>";
+    });
 }
- 
- 
-
-
-
-

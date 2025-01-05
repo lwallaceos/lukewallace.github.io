@@ -9,6 +9,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 body {
   background-color: #151616;
   text-align: center;
@@ -16,48 +17,9 @@ body {
   color: #000000;
 }
 
-.projects {
-  background-color: #000000;
-  color: white;
-  border: none;
-  transition: all 0.9s;
-  opacity: 0.8;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 50px;
-  margin-left: 20px;
-  border-radius: 5px;
-}
-
-.Education {
-  background-color: #000000;
-  color: white;
-  border: none;
-  transition: all 0.9s;
-  opacity: 0.8;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 50px;
-  margin-left: 20px;
-  border-radius: 5px;
-}
-
-.Experience {
-  background-color: #000000;
-  color: white;
-  border: none;
-  transition: all 0.9s;
-  opacity: 0.8;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  margin-top: 50px;
-  margin-left: 20px;
-  border-radius: 5px;
-}
-
+.projects,
+.Education,
+.Experience,
 .Contact {
   background-color: #000000;
   color: white;
@@ -86,6 +48,44 @@ body {
 }
 
 button:hover {
-  background-color: rgb(43, 42, 47);
-  transition: background-color 0.3s ease;
+  background-color: rgb(103, 97, 137);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(103, 97, 137, 0.6);
+}
+
+.menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: rgb(78, 72, 104);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(103, 97, 137);
+  transform: scale(1.05);
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
