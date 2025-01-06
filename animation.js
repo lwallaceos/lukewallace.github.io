@@ -1,4 +1,3 @@
-// Create the canvas and append it to the body
 const canvas = document.createElement("canvas");
 canvas.id = "starry-sky";
 canvas.style.position = "absolute";
@@ -6,10 +5,9 @@ canvas.style.top = "0";
 canvas.style.left = "0";
 canvas.style.width = "100%";
 canvas.style.height = "100%";
-canvas.style.zIndex = "-1"; // Ensures it stays behind other content
+canvas.style.zIndex = "-1";
 document.body.appendChild(canvas);
 
-// Get the canvas context
 const ctx = canvas.getContext("2d");
 
 // Function to adjust canvas size to match the full viewport
@@ -21,10 +19,8 @@ function adjustCanvasSize() {
 // Initial canvas size adjustment
 adjustCanvasSize();
 
-// Colors for the stars
 const starColors = ["#FFD700", "#FFFFFF", "#00BFFF", "#FF69B4", "#ADFF2F"];
 
-// Create stars and shooting stars arrays
 const stars = [];
 const shootingStars = [];
 
