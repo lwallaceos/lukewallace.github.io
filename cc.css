@@ -66,6 +66,6 @@ header {
 }
 
 .contact-btn:hover {
-  background-color: #e50404;
+  background: linear-gradient(135deg, #4a4a4a, #2c2c2c);
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.6);
 }
