@@ -9,10 +9,16 @@ canvas.style.height = "100%";
 canvas.style.zIndex = "-1"; // Ensures it stays behind other content
 document.body.appendChild(canvas);
 
-// Adjust canvas size to match the viewport
+// Adjust canvas size to match the full document height
 const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+
+function adjustCanvasSize() {
+  canvas.width = document.documentElement.scrollWidth;
+  canvas.height = document.documentElement.scrollHeight;
+}
+
+// Initial canvas size adjustment
+adjustCanvasSize();
 
 // Colors for the stars
 const starColors = ["#FFD700", "#FFFFFF", "#00BFFF", "#FF69B4", "#ADFF2F"];
@@ -107,8 +113,5 @@ for (let i = 0; i < 200; i++) {
 // Start animation
 animate();
 
-// Resize canvas on window resize
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
+// Resize canvas on window resize or document size change
+window.addEventListener("resize", adjustCanvasSize);
