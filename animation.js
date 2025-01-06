@@ -9,12 +9,13 @@ canvas.style.height = "100%";
 canvas.style.zIndex = "-1"; // Ensures it stays behind other content
 document.body.appendChild(canvas);
 
-// Adjust canvas size to match the full document height
+// Get the canvas context
 const ctx = canvas.getContext("2d");
 
+// Function to adjust canvas size to match the full viewport
 function adjustCanvasSize() {
-  canvas.width = document.documentElement.scrollWidth;
-  canvas.height = document.documentElement.scrollHeight;
+  canvas.width = window.innerWidth; // Use viewport width
+  canvas.height = window.innerHeight; // Use viewport height
 }
 
 // Initial canvas size adjustment
@@ -33,7 +34,7 @@ function createStar() {
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     radius: Math.random() * 1.5,
-    opacity: Math.random() * 0.5 + 0.5, // Less flashy: minimum opacity of 0.5
+    opacity: Math.random() * 0.5 + 0.5, // Minimum opacity of 0.5
     color: starColors[Math.floor(Math.random() * starColors.length)], // Random color
     opacityDirection: Math.random() > 0.5 ? 1 : -1, // Opacity fade direction
   };
@@ -106,12 +107,19 @@ function animate() {
 }
 
 // Initialize stars
-for (let i = 0; i < 200; i++) {
-  stars.push(createStar());
+function initializeStars() {
+  stars.length = 0; // Clear existing stars
+  for (let i = 0; i < 200; i++) {
+    stars.push(createStar());
+  }
 }
 
 // Start animation
+initializeStars();
 animate();
 
-// Resize canvas on window resize or document size change
-window.addEventListener("resize", adjustCanvasSize);
+// Resize canvas on window resize
+window.addEventListener("resize", () => {
+  adjustCanvasSize();
+  initializeStars(); // Reinitialize stars to fit the new dimensions
+});
