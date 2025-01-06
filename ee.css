@@ -5,9 +5,11 @@ body {
 }
 
 .container {
-  width: 100%;
-  margin-top: 60px;
-  padding: 40px;
+  display: block;
+  justify-content: center;
+  width: 80%;
+  margin-top: 40px;
+  padding: 35px;
   background: linear-gradient(#4a4a4a, #2c2c2c);
   border-radius: 10px;
   color: #c5cdca;
