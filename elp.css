@@ -54,7 +54,7 @@ section {
   padding: 10px;
   border: 1px solid #444444;
   width: 700px;
-  border-radius: 8px;
-  background-color: #1a1a1a;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #000000, #1f1e1e);
   margin-top: 20px;
 }
