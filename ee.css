@@ -11,7 +11,7 @@ body {
   width: 80%;
   margin-top: 40px;
   padding: 35px;
-  background: linear-gradient(#4a4a4a, #2c2c2c);
+  background: linear-gradient(135deg, #000000, #1f1e1e);
   border-radius: 10px;
   color: #c5cdca;
   transition: all 0.3s ease-in-out;
