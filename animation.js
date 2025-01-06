@@ -14,8 +14,8 @@ const ctx = canvas.getContext("2d");
 
 // Function to adjust canvas size to match the full viewport
 function adjustCanvasSize() {
-  canvas.width = window.innerWidth; // Use viewport width
-  canvas.height = window.innerHeight; // Use viewport height
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 }
 
 // Initial canvas size adjustment
@@ -34,9 +34,9 @@ function createStar() {
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     radius: Math.random() * 1.5,
-    opacity: Math.random() * 0.5 + 0.5, // Minimum opacity of 0.5
-    color: starColors[Math.floor(Math.random() * starColors.length)], // Random color
-    opacityDirection: Math.random() > 0.5 ? 1 : -1, // Opacity fade direction
+    opacity: Math.random() * 0.5 + 0.5,
+    color: starColors[Math.floor(Math.random() * starColors.length)],
+    opacityDirection: Math.random() > 0.5 ? 1 : -1,
   };
 }
 
@@ -57,7 +57,7 @@ function drawStar(star) {
   ctx.globalAlpha = star.opacity;
   ctx.beginPath();
   ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-  ctx.fillStyle = star.color; // Use the star's color
+  ctx.fillStyle = star.color;
   ctx.fill();
 }
 
@@ -81,7 +81,7 @@ function updateStars() {
     // Subtle opacity variation
     star.opacity += 0.01 * star.opacityDirection;
     if (star.opacity > 1 || star.opacity < 0.5) {
-      star.opacityDirection *= -1; // Reverse direction
+      star.opacityDirection *= -1;
     }
   });
 
@@ -108,7 +108,7 @@ function animate() {
 
 // Initialize stars
 function initializeStars() {
-  stars.length = 0; // Clear existing stars
+  stars.length = 0;
   for (let i = 0; i < 200; i++) {
     stars.push(createStar());
   }
@@ -121,5 +121,5 @@ animate();
 // Resize canvas on window resize
 window.addEventListener("resize", () => {
   adjustCanvasSize();
-  initializeStars(); // Reinitialize stars to fit the new dimensions
+  initializeStars();
 });
