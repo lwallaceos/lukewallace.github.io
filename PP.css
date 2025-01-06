@@ -36,9 +36,9 @@ h1 {
 }
 
 .button-link:hover {
-  background: linear-gradient(135deg, #f43f5e, #e11d48);
+  background: linear-gradient(#3731e9, #5e5ff5);
   transform: scale(1.1);
-  box-shadow: 0 8px 15px rgba(244, 63, 94, 0.5);
-  color: black;
+  box-shadow: 0 8px 15px rgba(56, 63, 191, 0.5);
+  color: rgb(255, 252, 252);
   transition: all 0.3s ease-in-out;
 }
