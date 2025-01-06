@@ -1,59 +1,71 @@
 body {
   font-family: Arial, sans-serif;
-  color: #4a4a4a;
+  color: #d9d9d9;
   line-height: 1.6;
+  margin: 0;
   padding: 20px;
-  background-color: #020202;
+  background-color: #151616;
 }
 
 h1 {
   font-size: 2.5rem;
   text-align: center;
-  color: rgb(218, 215, 215);
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #3731e9, #c5cdca, #8ecae6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .container {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
   width: 80%;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 800px;
   padding: 20px;
-  background: linear-gradient(135deg, #3b3ed9, #2a282a);
+  background: linear-gradient(135deg, #4a4a4a, #2c2c2c);
   border-radius: 10px;
-  color: #0f0f0f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in-out;
 }
 
 .container p {
-  color: #020202;
-  margin-bottom: 20px;
+  color: #c5cdca;
+  margin-bottom: 50px;
+  justify-content: center;
+  text-align: center;
 }
 
 .container:hover {
-  background: linear-gradient(135deg, #5e5ff5, #3b3b3b);
+  background: linear-gradient(135deg, #3731e9, #5e5ff5);
   transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(59, 130, 246, 0.5);
 }
 
 .contact-btn {
+  font-weight;
   font-size: 1rem;
   font-weight: bold;
-  padding: 10px 15px;
-  margin-top: 10px;
+  padding: 12px 20px;
+  margin-top: 20px;
   border: none;
   border-radius: 8px;
-  background-color: #8b8bf5;
-  color: #060606;
+  background-color: #b7b5f7;
+  color: #ffffff;
   cursor: pointer;
-  transition: 0.3s ease;
+  text-align: center;
+  transition: 0.3s ease-in-out;
   width: 100%;
   display: block;
 }
 
 .contact-btn:hover {
-  background-color: #5965a4;
+  background-color: #e50404;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.6);
 }
