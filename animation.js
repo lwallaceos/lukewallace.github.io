@@ -19,8 +19,7 @@ function adjustCanvasSize() {
 // Initial canvas size adjustment
 adjustCanvasSize();
 
-const starColors = ["#FFD700", "#FFFFFF", "#00BFFF", "#FF69B4", "#ADFF2F"];
-
+const starColor = "#D3D3D3"; // Soft light gray for all stars
 const stars = [];
 const shootingStars = [];
 
@@ -29,10 +28,8 @@ function createStar() {
   return {
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 1.5,
-    opacity: Math.random() * 0.5 + 0.5,
-    color: starColors[Math.floor(Math.random() * starColors.length)],
-    opacityDirection: Math.random() > 0.5 ? 1 : -1,
+    radius: Math.random() * 1.5, // Small star sizes for subtle effect
+    opacity: 0.7, // Fixed opacity for consistent visibility
   };
 }
 
@@ -53,7 +50,7 @@ function drawStar(star) {
   ctx.globalAlpha = star.opacity;
   ctx.beginPath();
   ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-  ctx.fillStyle = star.color;
+  ctx.fillStyle = starColor; // Use the fixed dim color
   ctx.fill();
 }
 
@@ -73,14 +70,6 @@ function drawShootingStar(star) {
 
 // Update stars and shooting stars
 function updateStars() {
-  stars.forEach((star) => {
-    // Subtle opacity variation
-    star.opacity += 0.01 * star.opacityDirection;
-    if (star.opacity > 1 || star.opacity < 0.5) {
-      star.opacityDirection *= -1;
-    }
-  });
-
   shootingStars.forEach((star, index) => {
     star.x -= Math.cos(star.angle) * star.speed;
     star.y -= Math.sin(star.angle) * star.speed;
