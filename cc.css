@@ -7,11 +7,6 @@ body {
   background-color: #000000;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .container {
   display: block;
   margin: auto;
