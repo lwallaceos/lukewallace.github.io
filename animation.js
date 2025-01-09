@@ -19,7 +19,6 @@ function adjustCanvasSize() {
 // Initial canvas size adjustment
 adjustCanvasSize();
 
-const starColor = "#D3D3D3"; // Soft light gray for all stars
 const stars = [];
 const shootingStars = [];
 
@@ -30,6 +29,7 @@ function createStar() {
     y: Math.random() * canvas.height,
     radius: Math.random() * 1.5, // Small star sizes for subtle effect
     opacity: 0.7, // Fixed opacity for consistent visibility
+    color: `hsl(${Math.random() * 360}, 100%, 75%)`, // Random rainbow color
   };
 }
 
@@ -50,7 +50,7 @@ function drawStar(star) {
   ctx.globalAlpha = star.opacity;
   ctx.beginPath();
   ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-  ctx.fillStyle = starColor; // Use the fixed dim color
+  ctx.fillStyle = star.color; // Use the rainbow color
   ctx.fill();
 }
 

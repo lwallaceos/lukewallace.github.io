@@ -35,11 +35,6 @@ li {
     transform 0.3s;
 }
 
-li:hover {
-  color: #9ac5e8;
-  transform: scale(1.07);
-}
-
 section {
   padding: 10px;
   border: 1px solid #444444;
