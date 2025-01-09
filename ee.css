@@ -1,11 +1,5 @@
-body {
-  font-family: "Arial", sans-serif;
-  color: #d9d9d9;
-  line-height: 1.6;
-  background: black;
-}
-
 .container {
+  font-family: "Arial", sans-serif;
   display: block;
   justify-content: center;
   width: 80%;
@@ -16,6 +10,7 @@ body {
   color: #c5cdca;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
 }
 
 .container:hover {
