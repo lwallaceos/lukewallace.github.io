@@ -1,4 +1,11 @@
-function loadContent(pageUrl) {
+function moveToTopAndLoadContent(pageUrl) {
+  const centeredContent = document.getElementById("centered-content");
+  const contentDiv = document.getElementById("content");
+
+  if (!centeredContent.classList.contains("to-top")) {
+    centeredContent.classList.add("to-top");
+  }
+
   fetch(pageUrl)
     .then((response) => {
       if (!response.ok) {
@@ -7,11 +14,12 @@ function loadContent(pageUrl) {
       return response.text();
     })
     .then((html) => {
-      document.getElementById("content").innerHTML = html;
+      contentDiv.innerHTML = html;
+      contentDiv.classList.add("visible");
     })
     .catch((error) => {
       console.error(error);
-      document.getElementById("content").innerHTML =
-        "<p>Sorry, content could not be loaded.</p>";
+      contentDiv.innerHTML = "<p>Sorry, content could not be loaded.</p>";
+      contentDiv.classList.add("visible");
     });
 }
