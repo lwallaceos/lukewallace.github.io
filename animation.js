@@ -27,9 +27,9 @@ function createStar() {
   return {
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
-    radius: Math.random() * 1.5, // Small star sizes for subtle effect
-    opacity: 0.7, // Fixed opacity for consistent visibility
-    color: `hsl(${Math.random() * 360}, 100%, 75%)`, // Random rainbow color
+    radius: Math.random() * 1.7, // Small star sizes for subtle effect
+    opacity: 1.0, // Fixed opacity for consistent visibility
+    color: `hsl(${Math.random() * 360}, 150%, 75%)`, // Random rainbow color
   };
 }
 
