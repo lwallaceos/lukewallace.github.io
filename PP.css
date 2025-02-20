@@ -18,6 +18,7 @@
   margin: 10px;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
 }
 
 .button-link:hover {
