@@ -33,7 +33,7 @@
   margin-top: 20px;
   border: none;
   border-radius: 8px;
-  background-color: #b7b5f7;
+  background-color: #4a4a4c;
   color: #ffffff;
   cursor: pointer;
   text-align: center;
@@ -43,5 +43,6 @@
 }
 
 .contact-btn:hover {
-  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.6);
+  background: linear-gradient(#3731e9, #5e5ff5);
+  box-shadow: none;
 }
