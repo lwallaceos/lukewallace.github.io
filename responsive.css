@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 @media (max-width: 1024px) {
@@ -61,6 +62,34 @@ body {
 
   #content {
     padding: 1rem;
+  }
+
+  /* Specific styles for the experience page */
+  .experience-section {
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .experience-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .experience-section ul {
+    padding-left: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .experience-section ul li {
+    margin-bottom: 0.5rem;
   }
 }
 
