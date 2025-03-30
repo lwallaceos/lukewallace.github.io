@@ -64,19 +64,17 @@ body {
     padding: 1rem;
   }
 
+  /* Specific styles for the experience page */
   .experience-section {
     padding: 1rem;
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 100%;
     text-align: left;
-    font-size: 0.9rem;
-    line-height: 1.6;
   }
 
   .experience-section h2 {
-    font-size: 1.4rem;
-    margin-bottom: 0.8rem;
-    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
 
   .experience-section p {
@@ -86,12 +84,12 @@ body {
   }
 
   .experience-section ul {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     font-size: 1rem;
   }
 
   .experience-section ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
   }
 }
 
