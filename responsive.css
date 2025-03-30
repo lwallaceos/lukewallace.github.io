@@ -1,13 +1,9 @@
-/* General styles for mobile responsiveness */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Default styles for desktop (no changes here) */
-
-/* Responsive styles for tablets and smaller screens */
 @media (max-width: 1024px) {
   #centered-content {
     padding: 1rem;
@@ -17,11 +13,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem; /* Add spacing between images */
+    gap: 1rem;
   }
 
   .images img {
-    max-width: 100px; /* Scale down images */
+    max-width: 100px;
     height: auto;
   }
 
@@ -29,7 +25,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.5rem; /* Add spacing between buttons */
+    gap: 0.5rem;
   }
 
   .menu button {
@@ -38,29 +34,28 @@ body {
   }
 }
 
-/* Responsive styles for mobile screens */
 @media (max-width: 768px) {
   #centered-content {
     padding: 0.5rem;
-    text-align: center; /* Center-align content */
+    text-align: center;
   }
 
   h1 {
-    font-size: 1.5rem; /* Reduce heading size */
+    font-size: 1.5rem;
   }
 
   .images img {
-    max-width: 80px; /* Further scale down images */
+    max-width: 80px;
   }
 
   .menu {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column;
     align-items: center;
   }
 
   .menu button {
-    width: 100%; /* Make buttons full-width */
-    max-width: 200px; /* Limit button width */
+    width: 100%;
+    max-width: 200px;
     font-size: 0.9rem;
   }
 
@@ -69,7 +64,6 @@ body {
   }
 }
 
-/* Prevent horizontal overflow */
 html,
 body {
   overflow-x: hidden;
